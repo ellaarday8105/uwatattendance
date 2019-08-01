@@ -20,6 +20,8 @@ class Main extends Component{
         this.getDataOnMount()
         this.getData()
     }
+    
+    // Get all the users in the database
 
     getDataOnMount = () => {
         let result = [];
@@ -31,6 +33,8 @@ class Main extends Component{
             this.setState({users: result})
         })
     }
+    
+    // Store the user after he/she searches for name
 
     registerData = (data) => {
         let today = new Date()
@@ -47,6 +51,8 @@ class Main extends Component{
 
     }
 
+    // Get all registered users for that day
+    
     getData = () => {
         let result = [];
         firebase.database().ref('todayList/').once('value', (snapshot)=> {
@@ -60,6 +66,9 @@ class Main extends Component{
         })
     }
 
+    
+    // get the value of the search input
+    
     handleChange = (e) => {
         let search = e.target.value
         if(search.length > 3){
