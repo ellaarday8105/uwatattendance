@@ -31,3 +31,52 @@
     transform: rotate(360deg);
   }
 }
+
+.header{
+  background: rgb(240, 66, 66);
+  padding: 3% 5%;
+}
+
+.main{
+  background: #282c34;
+  height: 100vh;
+  padding: 6% 3%;
+}
+
+.register-container{
+  background: rgba(172, 172, 172, 0.815);
+  height: 500px;
+
+}
+
+.dropdown-box{
+  background: white;
+  margin-top:5px; 
+}
+
+.dropdown-box ul{
+  list-style: none;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.dropdown-box ul li{
+  display: block;
+  background: rgb(204, 204, 204);
+  padding: 13px;
+  border-bottom:1px solid rgb(131, 131, 131);
+}
+
+.register-container ul {
+  list-style: none;
+  padding: 0 !important;
+  text-align: left;
+}
+
+.register-container ul li {
+  display: block;
+  background: rgb(100, 52, 52);
+  padding: 13px;
+  color:white;
+  border-bottom:1px solid rgb(131, 131, 131);
+}
